@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/image_from_delete"
+                    android:layout_width="140dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:background="@color/colorWhite"
+
+                    tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/delete_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:maxLines="13"
+        android:singleLine="true"
+        android:textColor="@color/colorForText"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tailesImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tailesImage"
+        app:layout_constraintTop_toBottomOf="@+id/button_delete_post" />
+
+    <TextView
+        android:id="@+id/delete_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:gravity="left"
+        android:text="Сказка"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toStartOf="@+id/button_delete_post"
+        app:layout_constraintStart_toEndOf="@+id/tailesImage"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_delete_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+
+        android:text="Delete post"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,90 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+
+    tools:context="com.eguo.lullabyes.Fragments.TaileFragment">
+
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_taile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_bar_height"
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+                <ImageView
+                    android:id="@+id/taile_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop" />
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar_taile"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" >
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:id="@+id/back_onefragment"
+                        android:layout_height="50dp"
+
+                        android:paddingTop="13dp"
+                        android:paddingRight="23dp"
+                        android:paddingBottom="13dp"
+                        android:src="@drawable/ic_arrow_back_black_24dp"/>
+<com.devspark.robototextview.widget.RobotoTextView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:textSize="20sp"
+    app:robotoFontFamily="roboto"
+    app:robotoTextWeight="medium"
+
+    android:textColor="@color/colorWhite"
+    android:gravity="left|center"
+    android:paddingLeft="5dp"
+android:text="Tailese"
+    android:maxLines="13"
+    android:ellipsize="end"
+    android:singleLine="true"
+
+    android:id="@+id/taile_name"
+   />
+                </androidx.appcompat.widget.Toolbar>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/background_taile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:id="@+id/taile_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textColor="@color/colorForText"
+            android:textSize="17dp"
+
+            />
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

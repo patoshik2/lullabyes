@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_havigatbottom"
+        android:icon="@drawable/ic_stat_name"
+        android:title="@string/taitle_home" />
+
+    <item
+        android:id="@+id/book_navigaitbottom"
+        android:icon="@drawable/ic_book_black_24dp"
+        android:title="@string/taile_botton" />
+    <item
+        android:id="@+id/audio_navigatbottom"
+        android:icon="@drawable/ic_music_note_black_24dp"
+        android:title="@string/Audio" />
+
+    <item
+        android:id="@+id/searc_navigatbottom"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="@string/search_botton" />
+    <item
+        android:id="@+id/setting_navigatbottom"
+        android:icon="@drawable/hamburger_white"
+        android:title="@string/setting_botton_navig" />
+
+</menu>

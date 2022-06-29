@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FIreBaseFragments.HomeFragment">
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+    <TextView
+        android:text="Популярное"
+        android:textSize="32dp"
+        android:paddingStart="12dp"
+        android:background="@color/colorWhite"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorForText"
+        android:layout_height="60dp"/>
+    <TextView
+        android:text="То что у нас часто читают и слушают"
+        android:textSize="16dp"
+        android:paddingStart="12dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorForText"
+        android:layout_height="40dp"/>
+       <com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView
+           android:id="@+id/popular_horiz_item"
+           android:layout_width="match_parent"
+           android:layout_height="200dp"
+           android:orientation="horizontal"
+           android:background="@color/colorWhite"
+           app:msrv_gravity="start"
+       app:msrv_snap_count="1"
+       app:msrv_ms_per_inch="100">
+       </com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView>
+
+
+
+
+
+    <TextView
+        android:text="Недавно добавленное"
+        android:textSize="32dp"
+        android:paddingStart="12dp"
+        android:background="@color/colorWhite"
+        android:gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorForText"
+        android:layout_height="60dp"/>
+    <TextView
+        android:text="Последние опубликованный контент"
+        android:textSize="16dp"
+        android:paddingStart="12dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorForText"
+        android:layout_height="40dp"/>
+    <com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView
+        android:id="@+id/add_horiz_item"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+
+        app:msrv_gravity="start"
+        app:msrv_snap_count="1"
+        app:msrv_ms_per_inch="100">
+    </com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView>
+
+
+
+
+
+ <TextView
+        android:text="Авторы"
+        android:textSize="32dp"
+        android:paddingStart="12dp"
+        android:background="@color/colorWhite"
+        android:gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorForText"
+        android:layout_height="60dp"/>
+    <TextView
+        android:text="Лучшие произведения написанные в золотом веке"
+        android:textSize="16dp"
+        android:paddingStart="12dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorForText"
+        android:layout_height="40dp"/>
+    <com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView
+        android:id="@+id/autor_horiz_item"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+
+        app:msrv_gravity="start"
+        app:msrv_snap_count="1"
+        app:msrv_ms_per_inch="100">
+    </com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView>
+
+
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:text="Сказки"
+        android:textSize="32dp"
+        android:paddingStart="12dp"
+        android:background="@color/colorWhite"
+        android:gravity="bottom"
+       android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorForText"
+        android:layout_height="60dp"/>
+
+    <TextView
+        android:id="@+id/taile_allofthem"
+        android:text="ещё >"
+        android:textSize="32dp"
+        android:paddingStart="12dp"
+        android:background="@color/colorWhite"
+        android:gravity="bottom"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorForText"
+        android:layout_height="60dp"/>
+
+</LinearLayout>
+    <TextView
+        android:text="Каталог всевозможных сказок, читай зачитайся"
+        android:textSize="16dp"
+        android:paddingStart="12dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorForText"
+        android:layout_height="40dp"/>
+    <com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView
+        android:id="@+id/taile_horiz_item"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+
+        app:msrv_gravity="start"
+        app:msrv_snap_count="1"
+        app:msrv_ms_per_inch="100">
+    </com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+    <TextView
+        android:text="Аудиосказки"
+        android:textSize="32dp"
+        android:paddingStart="12dp"
+        android:background="@color/colorWhite"
+        android:gravity="bottom"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorForText"
+        android:layout_height="60dp"/>
+        <TextView
+            android:id="@+id/audio_allofthem"
+            android:text="ещё >"
+            android:textSize="32dp"
+            android:paddingStart="12dp"
+            android:background="@color/colorWhite"
+            android:gravity="bottom"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="7"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorForText"
+            android:layout_height="60dp"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:text="Озвученные сказки для вашей малютки"
+        android:textSize="16dp"
+        android:paddingStart="12dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorForText"
+        android:layout_height="40dp"/>
+    <com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView
+        android:id="@+id/audio_horiz_item"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+
+        app:msrv_gravity="start"
+        app:msrv_snap_count="1"
+        app:msrv_ms_per_inch="100">
+    </com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+    <TextView
+        android:text="Колыбельные"
+        android:textSize="32dp"
+        android:paddingStart="12dp"
+        android:background="@color/colorWhite"
+        android:gravity="bottom"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorForText"
+        android:layout_height="60dp"/>
+    <TextView
+        android:id="@+id/kolibel_allofthem"
+        android:text="ещё >"
+        android:textSize="32dp"
+        android:paddingStart="12dp"
+        android:background="@color/colorWhite"
+        android:gravity="bottom"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorForText"
+        android:layout_height="60dp"/>
+
+
+</LinearLayout>
+    <TextView
+        android:text="Поможем усыпить вашего ребенка"
+        android:textSize="16dp"
+        android:paddingStart="12dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorForText"
+        android:layout_height="40dp"/>
+    <com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView
+        android:id="@+id/kolibel_horiz_item"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+android:layout_marginBottom="40dp"
+        app:msrv_gravity="start"
+        app:msrv_snap_count="1"
+        app:msrv_ms_per_inch="100">
+    </com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView>
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</ScrollView>
